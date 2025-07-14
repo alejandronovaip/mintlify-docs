@@ -1,12 +1,12 @@
 ---
-title: 'Development'
-HEAD
-description: 'Preview changes locally to update your docs'
+title: "Development"
+description: "Preview changes locally to update your docs"
 ---
 
 <Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. <br />
-  Please upgrade to ```docs.json``` before proceeding and delete the legacy ```mint.json``` file.
+  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. \\
+
+  Please upgrade to `docs.json` before proceeding and delete the legacy `mint.json` file.
 </Info>
 
 Follow these steps to install and run Mintlify on your operating system:
@@ -15,26 +15,10 @@ Follow these steps to install and run Mintlify on your operating system:
 
 <CodeGroup>
 
-  ```bash npm
-  npm i -g mintlify
-  ```
-
-description: 'Learn how to preview changes locally'
----
-
-<Info>
-  **Prerequisite** You should have installed Node.js (version 18.10.0 or
-  higher).
-</Info>
-
-Step 1. Install Mintlify on your OS:
-
-<CodeGroup>
-
 ```bash npm
 npm i -g mintlify
 ```
-53bf2ea (Initial commit)
+
 
 ```bash yarn
 yarn global add mintlify
@@ -74,6 +58,7 @@ Each CLI is linked to a specific version of Mintlify. Please update the CLI if y
 npm i -g mintlify@latest
 ```
 
+
 ```bash yarn
 yarn global upgrade mintlify
 ```
@@ -89,10 +74,6 @@ yarn global upgrade mintlify
 
 You should see the following if the deploy successfully went through:
 
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
-
 ## Troubleshooting
 
 Here's how to solve some common problems when working with the CLI.
@@ -102,12 +83,11 @@ Here's how to solve some common problems when working with the CLI.
     Update to Node v18. Run `mintlify install` and try again.
   </Accordion>
   <Accordion title="No such file or directory on Windows">
-Go to the `C:/Users/Username/.mintlify/` directory and remove the `mint`
-folder. Then Open the Git Bash in this location and run `git clone
-https://github.com/mintlify/mint.git`.
+    Go to the `C:/Users/Username/.mintlify/` directory and remove the `mint`
+    folder. Then Open the Git Bash in this location and run `git clone
+            https://github.com/mintlify/mint.git`.
 
-Repeat step 3.
-
+    Repeat step 3.
   </Accordion>
   <Accordion title="Getting an unknown error">
     Try navigating to the root of your device and delete the ~/.mintlify folder.
